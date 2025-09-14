@@ -8,10 +8,10 @@ import os
 load_dotenv()
 
 # Get the API key
-# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # Initialize Groq API
 # GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
-GROQ_API_KEY = "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"
+# GROQ_API_KEY = "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"
 groq_client = Groq(api_key=GROQ_API_KEY)
 def process_query(query, data_summary):
     system_message = (
