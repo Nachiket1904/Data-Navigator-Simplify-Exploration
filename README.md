@@ -155,3 +155,5 @@ flowchart TD
 * Export generated **analysis reports** as PDF/Docx.
 * Multi-user authentication & session management.
 
+## gaama link
+https://gamma.app/docs/Data-Navigator-Simplify-Exploration-opa7xr44b77cap8
