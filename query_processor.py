@@ -46,42 +46,6 @@ def process_query(query, data_summary):
     return response.choices[0].message.content
 
 
-# import google.generativeai as genai
-# import streamlit as st  # type: ignore
-# from data_insights import generate_summary
-# import os
-
-# # Initialize Gemini API
-# GEMINI_API_KEY = ""
-# genai.configure(api_key=GEMINI_API_KEY)
-
-# def process_query(query, data_summary):
-#     system_message = (
-#         f"You are a highly skilled and professional data analyst proficient in Python programming and data visualization tools like Pandas and Matplotlib.\n"
-#         f"Below is the summary of a dataset:\n{data_summary}\n"
-#         "Your task is to provide clean and well-structured Python code that fulfills the following requirements:\n"
-#         "1. The code must address the user's question or request explicitly. The question is: '{query}'.\n"
-#         "2. Assume the dataset has already been loaded into a DataFrame named `df`.\n"
-#         "3. If the query involves generating a visualization (e.g., bar chart, line chart, etc.), ensure that:\n"
-#         "   a. The chart is well-labeled with appropriate titles, axis labels, and legends (if applicable).\n"
-#         "   b. The chart displays no more than the top or bottom 10 categories based on count or value unless the user explicitly requests to show all categories.\n"
-#         "   c. Include a brief annotation or highlight specific features of the visualization where necessary.\n"
-#         "4. If numerical analysis is requested, provide clear and concise insights such as statistical summaries, correlations, or trends.\n"
-#         "5. Include comments in the code to explain each major step for better readability.\n"
-#         "6. The output should contain only the Python code (no explanations or extraneous text).\n"
-#     )
-
-#     # Initialize Gemini model
-#     model = genai.GenerativeModel("gemini-2.0-flash")
-
-#     # Query Gemini
-#     response = model.generate_content([system_message, query])
-#     # print(response)
-
-#     # Return generated code
-#     return response.text
-
-
 def process_NLP_query(query, data_summary):
     system_message = (
         f"You are a highly intelligent AI assistant with expertise in data analysis and NLP.\n"
